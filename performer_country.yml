@@ -1,0 +1,14 @@
+# example plugin config
+name: Performer country
+description: Cleanup performers country code
+version: 0.1
+url: https://github.com/com1234475/stash-plugin-performer-creator
+exec:
+ - env/bin/python
+ - "{pluginDir}/performer_country.py"
+interface: raw
+tasks:
+  - name: country performers
+    description: country the performers
+    defaultArgs:
+      mode: cleanup
